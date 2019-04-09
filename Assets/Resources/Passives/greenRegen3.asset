@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5985f29fd74b0ce4292c7bcc140860a6, type: 3}
+  m_Name: greenRegen3
+  m_EditorClassIdentifier: 
+  title: Green Regen Rank 3
+  description: Generate 8 green energy every second
+  icon: {fileID: 21300000, guid: d7cc4426f77a41c43a870cd7a6c553e0, type: 3}
+  cost: 450
+  index: 7
