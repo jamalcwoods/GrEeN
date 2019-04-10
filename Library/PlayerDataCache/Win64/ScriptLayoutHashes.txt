@@ -167,7 +167,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 2a3e7815b1bb2edbae9131f7790d34ad Assembly-CSharp.dll:.PassiveUIOption
 9fbff4d201704007ccd6cbb8f630470d Assembly-CSharp.dll:.energyCoreBehavior
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-e00222d7d67a540efcddc11e0e09ba60 Assembly-CSharp.dll:.managementScript
+e9836e45b4a7c2ac08a12b9fa9f41307 Assembly-CSharp.dll:.managementScript
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.instructionsManager

@@ -10,13 +10,14 @@ public class managementScript : MonoBehaviour
     public int kills;
     public int killCounter;
     float spawnCoreTimer;
-    public float spawnCoreDelay;
+    float spawnCoreDelay;
     float spawnEnemyTimer;
-    public float spawnEnemyDelay;
+    float spawnEnemyDelay;
     float greenRegenTimer;
-    public float greenRegenDelay;
+    float greenRegenDelay;
     float increaseSpawnRateTimer;
-    public float increaseSpawnRateDelay;
+    float increaseSpawnRateDelay;
+    public float coreDelay, enemyDelay, greenDelay,spawnRateDelay;
     public GameObject player;
     private playerStats stats;
     public GameObject canvasObject;
@@ -42,6 +43,10 @@ public class managementScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        greenRegenDelay = greenDelay;
+        spawnCoreDelay = coreDelay;
+        spawnEnemyDelay = enemyDelay;
+        increaseSpawnRateDelay = spawnRateDelay;
         DiscordRpc.RichPresence presence = gameObject.GetComponent<DiscordController>().presence;
         if (accountStats.record > 0)
         {
@@ -71,15 +76,15 @@ public class managementScript : MonoBehaviour
         }
         if (accountStats.passives.Contains(5))
         {
-            greenRegen = 1;
+            greenRegen = 2;
         }
         if (accountStats.passives.Contains(6))
         {
-            maxCores = 2;
+            greenRegen = 4;
         }
         if (accountStats.passives.Contains(7))
         {
-            maxCores = 3;
+            greenRegen = 8;
         }
         if (accountStats.passives.Contains(8))
         {
@@ -120,6 +125,9 @@ public class managementScript : MonoBehaviour
 
     public void loadGame()
     {
+        greenRegenDelay = greenDelay;
+        spawnCoreDelay = coreDelay;
+        spawnEnemyDelay = enemyDelay;
         playerStats p = new playerStats();  
         p.speed = 6;
         p.colorValues = new float[] { 0, 255, 0 };
@@ -231,7 +239,7 @@ public class managementScript : MonoBehaviour
                 }
                 if (Time.timeSinceLevelLoad > increaseSpawnRateTimer)
                 {
-                    increaseSpawnRateTimer= Time.timeSinceLevelLoad + increaseSpawnRateDelay;
+                    increaseSpawnRateTimer = Time.timeSinceLevelLoad + increaseSpawnRateDelay;
                     if(spawnEnemyDelay >= 0.8)
                     {
                         spawnEnemyDelay -= 0.2f;

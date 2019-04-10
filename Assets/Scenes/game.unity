@@ -622,10 +622,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kills: 0
   killCounter: 0
-  spawnCoreDelay: 8
-  spawnEnemyDelay: 2
-  greenRegenDelay: 1
-  increaseSpawnRateDelay: 15
+  coreDelay: 8
+  enemyDelay: 6
+  greenDelay: 1
+  spawnRateDelay: 2.75
   player: {fileID: 0}
   canvasObject: {fileID: 564252097}
   enemyPool:
