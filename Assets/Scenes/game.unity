@@ -623,7 +623,7 @@ MonoBehaviour:
   kills: 0
   killCounter: 0
   coreDelay: 8
-  enemyDelay: 6
+  enemyDelay: 3.8
   greenDelay: 1
   spawnRateDelay: 2.75
   player: {fileID: 0}
