@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Green Regen Rank 1
   description: Generate 4 green energy every second
   icon: {fileID: 21300000, guid: 2f91114f6b59f57419b834d4c83b7c81, type: 3}
-  cost: 200
+  cost: 25
   index: 6

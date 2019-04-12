@@ -15,5 +15,5 @@ MonoBehaviour:
   title: Capacity Regen
   description: Regenerate 5 energy capacity every 10 kills
   icon: {fileID: 21300000, guid: d082fd95cf6ce0a43a01332bd413cb8b, type: 3}
-  cost: 250
+  cost: 10
   index: 8
